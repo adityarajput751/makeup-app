@@ -1,0 +1,111 @@
+.hero {
+    height: 100vh;
+    background-image: url('../../assets/bg.jpg'); /* <-- use your actual image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2); /* optional dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .hero-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  
+  .hero-left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-left p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #ff7f50;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e66b3c;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-left h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-left p {
+      font-size: 1rem;
+    }
+  
+    .hero-buttons {
+      justify-content: center;
+    }
+  }
