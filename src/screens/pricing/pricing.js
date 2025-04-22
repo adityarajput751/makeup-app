@@ -29,7 +29,7 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <div className="pricing-section">
+    <section className="pricing-section" id="pricing">
       <div className="pricing-container">
         {/* Left Side Image */}
         <div className="pricing-image">
@@ -67,7 +67,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

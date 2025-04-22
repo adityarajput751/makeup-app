@@ -84,8 +84,28 @@ function Navbar() {
   <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
 </Link>
 </li>
-        <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-        <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+<li>
+  <Link
+  to="pricing"
+  smooth={true}
+  duration={500}
+  offset={-50} // Optional: adjust based on fixed header height
+>
+  <a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a>
+</Link>
+</li>
+<li>
+  <Link
+  to="contact"
+  smooth={true}
+  duration={500}
+  offset={-50} // Optional: adjust based on fixed header height
+>
+  <a href="#contact" onClick={() => setMenuOpen(false)}>Contact us</a>
+</Link>
+</li>
+        {/* <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li> */}
+        {/* <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li> */}
       </ul>
     </nav>
   );

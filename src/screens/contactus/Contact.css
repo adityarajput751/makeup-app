@@ -1,0 +1,86 @@
+.contact-section {
+    /* background: url('/images/bridal-bg.jpg') no-repeat center center/cover; */
+    padding: 60px 20px;
+    color: #000;
+    position: relative;
+  }
+  
+  .contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0.9); /* Light overlay for readability */
+    z-index: 1;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-header p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .form-left,
+  .form-right {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border: none;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    padding: 10px 5px;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+    height: 8.8rem;
+  }
+  
+  .contact-form button {
+    width: fit-content;
+    padding: 12px 30px;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #333;
+  }
+  
