@@ -1,0 +1,90 @@
+.pricing-section {
+    background-color: #fffaf5;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .pricing-image img {
+    width: 100%;
+    height: 32rem;
+    border-radius: 10px;
+    max-width: 500px;
+  }
+  
+  .pricing-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .pricing-content h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  
+  .pricing-content p {
+    color: #666;
+    margin-bottom: 24px;
+    max-width: 500px;
+  }
+  
+  .pricing-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .pricing-buttons button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+  
+  .pricing-buttons .active {
+    background-color: #c6b98b;
+    color: #000;
+  }
+  
+  .pricing-tables {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-column {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .pricing-column h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pricing-column li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #aaa;
+    padding: 8px 0;
+    font-size: 16px;
+  }
+  
