@@ -23,14 +23,15 @@
     color: #C99891;
     font-size: 24px;
     background: white;
-    padding: 8px;
+    padding: 10px;
     border-radius: 5px;
   }
   
   .logo {
     font-size: 40px;
     letter-spacing: 2px;
-    margin-top: 20px;
+    margin-top: 50px;
+    /* top: 300px; */
   }
   
   .nav-links {
@@ -68,6 +69,7 @@
   .content-buttons button {
     display: block;
     width: 200px;
+    /* width: '20%'; */
     margin: 30px 0;
     background-color: rgba(201, 152, 145, 0.4);
     border: none;
@@ -83,6 +85,8 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+    top: '90%';
+    z-index: 10000;
   }
   
   .whatsapp-chat button {
@@ -117,7 +121,7 @@
   
     .logo {
       font-size: 28px;
-      margin-top: 10px;
+      margin-top: 20px;
     }
   
     .nav-links {
@@ -134,15 +138,16 @@
   
     .main-content {
       position: static;
-      margin-top: 100px;
+      margin-top: 180px;
       transform: none;
       padding: 0 20px;
       text-align: center;
-      margin-left: 280px;
+      margin-left: 300px;
+      
     }
   
     .content-buttons button {
-      width: 60%;
+      width: 80%;
       text-align: center;
       font-size: 16px;
       margin: 8px 0;
@@ -157,6 +162,7 @@
   @media (max-width: 480px) {
     .logo {
       font-size: 24px;
+      margin-top: 20px;
     }
   
     .nav-links a {
