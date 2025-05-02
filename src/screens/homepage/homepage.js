@@ -1,11 +1,16 @@
 import React from 'react';
 import './HomePage.css';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
-
+const navigate = useNavigate()
 
     const handleWhatsAppClick = () => {
         window.open('https://wa.me/918XXXXXXX', '_blank');
+      };
+
+      const goToPortfolio = () => {
+        navigate('/portfolio');
       };
   return (
     <div className="homepage">
@@ -31,7 +36,7 @@ const HomePage = () => {
 
       <div className="main-content">
         <div className="content-buttons">
-          <button>Portfolio</button>
+          <button onClick={goToPortfolio}>Portfolio</button>
           <button>Academy</button>
           <button>Products</button>
           <button>Studio</button>
