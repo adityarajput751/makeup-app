@@ -4,6 +4,9 @@
     height: 200vh;
     color: white;
     font-family: 'Arial', sans-serif;
+    background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center top;
   }
   
   .header {
@@ -60,10 +63,14 @@
   }
   
   .main-content {
-    position: absolute;
-    top: 25%;
-    right: 100px;
-    transform: translateY(-50%);
+    position: static;
+      margin-top: 50px;
+      transform: none;
+      padding: 0 100px;
+      text-align: center;
+      display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   }
   
   .content-buttons button {
@@ -85,8 +92,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    top: '90%';
-    z-index: 10000;
+    z-index: 1000000;
   }
   
   .whatsapp-chat button {
@@ -97,6 +103,7 @@
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 20px;
   }
   
   /* Optional Font Awesome CDN for icons */
@@ -104,10 +111,13 @@
   
   /* Responsive Styles */
   @media (max-width: 768px) {
-    .homepage {
-      height: 120vh; /* Reduce height on smaller devices */
-      background-position: center top;
-    }
+        .homepage {
+          height: 100vh;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center top;
+        }
+      
   
     .social-icons {
       top: 10px;
@@ -142,15 +152,20 @@
       transform: none;
       padding: 0 20px;
       text-align: center;
-      margin-left: 300px;
+      display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+      /* margin-left: 300px; */
+      
       
     }
   
     .content-buttons button {
-      width: 80%;
+      width: 100%;
       text-align: center;
       font-size: 16px;
-      margin: 8px 0;
+      margin: 20px 0;
+
     }
   
     .whatsapp-chat {
@@ -167,6 +182,10 @@
   
     .nav-links a {
       font-size: 14px;
+    }
+
+    .main-content {
+        margin-top: 80px;
     }
   
     .content-buttons button {

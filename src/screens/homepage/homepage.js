@@ -2,6 +2,11 @@ import React from 'react';
 import './HomePage.css';
 
 const HomePage = () => {
+
+
+    const handleWhatsAppClick = () => {
+        window.open('https://wa.me/918XXXXXXX', '_blank');
+      };
   return (
     <div className="homepage">
       <header className="header">
@@ -34,7 +39,7 @@ const HomePage = () => {
           <button>About</button>
         </div>
         <div className="whatsapp-chat">
-          <button>Chat with us</button>
+          <button onClick={handleWhatsAppClick}>Chat with us</button>
         </div>
       </div>
     </div>
