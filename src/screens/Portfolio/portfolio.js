@@ -55,7 +55,7 @@ function Portfolio() {
   return (
     <div className="portfolio-container">
         <Header />
-      <h2>My Instagram Portfolio</h2>
+      {/* <h2>My Instagram Portfolio</h2> */}
       <div className="post-grid">
         {posts.map((post) => (
           <div className="post-card" key={post.id}>
