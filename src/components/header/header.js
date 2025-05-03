@@ -9,7 +9,7 @@ const Header = () => {
       };
   return (
     <header className="header">
-      <div className="social-icons">
+      {/* <div className="social-icons">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-facebook-f"></i>
         </a>
@@ -23,18 +23,18 @@ const Header = () => {
         <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-youtube"></i>
         </a>
-      </div>
+      </div> */}
       <div className="logo">PRIYA PRATAP</div>
       <nav className="nav-links">
         <a onClick={goToHome} href="">Home</a>
-        <a href="#" className="active">Portfolio</a>
-        <a href="#">Academy short courses</a>
-        <a href="#">Academy</a>
-        <a href="#">Products</a>
-        <a href="#">Prices</a>
-        <a href="#">Studio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="" className="active">Portfolio</a>
+        <a href="">Academy short courses</a>
+        <a href="">Academy</a>
+        <a href="">Products</a>
+        <a href="">Prices</a>
+        <a href="">Studio</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
       </nav>
     </header>
   );

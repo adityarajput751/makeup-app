@@ -1,12 +1,17 @@
 import React from "react";
 import "./Footer.css";
+import instaIcon from '../../assets/instaIcon.png'
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div>
-        
+      <a href="https://www.instagram.com/makeup_by_priyapratap?igsh=cHZiY2t2djh4eGds"
+          target="_blank"
+          rel="noopener noreferrer">
+      <div className="insta-icon" >
+        <img alt="Instagram Icon" src={instaIcon} />
       </div>
+      </a>
       <div className="footer-content">
         
         <div className="footer-section">

@@ -4,6 +4,27 @@
     background-color: #fff;
     font-family: 'Segoe UI', sans-serif;
   }
+
+  .insta-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem; /* adjust as needed */
+    width: 15.62rem;  /* adjust as needed */
+    margin: auto;  /* center horizontally */
+  }
+  
+  .insta-icon img {
+    height: 5rem; /* adjust as needed */
+    width: 15.62rem;  /* adjust as needed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .insta-icon img:hover {
+    transform: scale(1.1); /* zoom effect */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+  }
+  
   
   .footer-content {
     display: flex;
