@@ -4,6 +4,7 @@ import Footer from './screens/footer/footer';
 import HomeScreen from './screens/homeScreen/HomeScreen';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Portfolio from './screens/Portfolio/portfolio';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         {/* Add more routes as needed */}
       </Routes>
       <Footer />
+      <ToastContainer position="top-right" autoClose={2000} />
     </Router>
     </div>
   );

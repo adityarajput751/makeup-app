@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();
@@ -34,7 +35,8 @@ const Contact = () => {
     ).then(
       (result) => {
         console.log("EmailJS Response:", result);
-        alert("Message sent successfully!");
+        // alert("Message sent successfully!");
+        toast.success('We will contact you soon.')
       },
       (error) => {
         console.log("EmailJS Error:", error.text);
@@ -60,7 +62,7 @@ const Contact = () => {
             <input type="tel" name="user_phone" placeholder="Phone" required />
           </div>
           <div className="form-right">
-            <textarea name="message" placeholder="Your Message..." rows="6" required></textarea>
+            <textarea name="message" placeholder="Your Message..." rows="6"></textarea>
             <button type="submit">Submit Now</button>
           </div>
         </form>

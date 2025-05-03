@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const HomePage = () => {
 const navigate = useNavigate()
@@ -37,11 +38,11 @@ const navigate = useNavigate()
       <div className="main-content">
         <div className="content-buttons">
           <button onClick={goToPortfolio}>Portfolio</button>
-          <button>Academy</button>
-          <button>Products</button>
-          <button>Studio</button>
-          <button>Prices</button>
-          <button>About</button>
+          <button onClick={()=>toast.info('Coming Soon')}>Academy</button>
+          <button onClick={()=>toast.info('Coming Soon')}>Products</button>
+          <button onClick={()=>toast.info('Coming Soon')}>Studio</button>
+          <button onClick={()=>toast.info('Coming Soon')}>Prices</button>
+          <button onClick={()=>toast.info('Coming Soon')}>About</button>
         </div>
         <div className="whatsapp-chat">
         {/* <div className="social-icons">
