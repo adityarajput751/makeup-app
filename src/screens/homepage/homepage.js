@@ -6,7 +6,7 @@ const HomePage = () => {
 const navigate = useNavigate()
 
     const handleWhatsAppClick = () => {
-        window.open('https://wa.me/918XXXXXXX', '_blank');
+        window.open('https://wa.me/918279373678', '_blank');
       };
 
       const goToPortfolio = () => {
@@ -15,11 +15,11 @@ const navigate = useNavigate()
   return (
     <div className="homepage">
       <header className="header">
-        <div className="social-icons">
+        {/* <div className="social-icons">
           <a href="facebook"><i className="fab fa-facebook-f"></i></a>
           <a target='_blank' rel="noopener noreferrer" href="https://www.instagram.com/makeup_by_priyapratap?igsh=cHZiY2t2djh4eGds"><i className="fab fa-instagram"></i></a>
           <a href="youtube"><i className="fab fa-youtube"></i></a>
-        </div>
+        </div> */}
         <h1 className="logo">PRIYA PRATAP</h1>
         {/* <nav className="nav-links">
           <a href="#">Home</a>
@@ -44,6 +44,11 @@ const navigate = useNavigate()
           <button>About</button>
         </div>
         <div className="whatsapp-chat">
+        <div className="social-icons">
+          {/* <a href="facebook"><i className="fab fa-facebook-f"></i></a> */}
+          <a target='_blank' rel="noopener noreferrer" href="https://www.instagram.com/makeup_by_priyapratap?igsh=cHZiY2t2djh4eGds"><i className="fab fa-instagram"></i></a>
+          {/* <a href="youtube"><i className="fab fa-youtube"></i></a> */}
+        </div>
           <button onClick={handleWhatsAppClick}>Chat with us</button>
         </div>
       </div>

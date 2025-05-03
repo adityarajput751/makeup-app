@@ -12,7 +12,7 @@ function HomeScreen() {
       {/* <Services />
       <Pricing /> */}
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
